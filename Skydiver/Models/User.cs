@@ -11,6 +11,6 @@ namespace Skydiver.Models
 
         public string UserName { get; set; } = null!;
 
-        public decimal UserHighscore { get; set; }
+        public string UserHighscore { get; set; }
     }
 }

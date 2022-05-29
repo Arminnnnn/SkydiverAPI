@@ -20,14 +20,14 @@ namespace Skydiver.Controllers
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<User>> Get(string id)
         {
-            var book = await _userService.GetAsync(id);
+            var user = await _userService.GetAsync(id);
 
-            if (book is null)
+            if (user is null)
             {
                 return NotFound();
             }
 
-            return book;
+            return user;
         }
 
         [HttpPost]

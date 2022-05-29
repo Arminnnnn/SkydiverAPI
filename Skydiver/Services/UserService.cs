@@ -7,6 +7,7 @@ namespace Skydiver.Services
     public class UserService
     {
         private readonly IMongoCollection<User> _userCollection;
+       
 
         public UserService(
             IOptions<SkydiverDatabaseSettings> skydiverDatabaseSettings)
